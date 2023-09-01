@@ -1,7 +1,9 @@
 @Library(['piper-lib', 'piper-lib-os']) _
 pipeline {
     agent any
-
+     tools{
+        maven 'mavan_spring'
+        }
     stages {
         stage('Hello') {
             steps {
@@ -15,6 +17,11 @@ pipeline {
                     setupPipelineEnvironment script: this
                     checkout scm
                 }
+            }
+        }
+         stage('Build') {
+            steps {
+                bat 'mvn clean install'
             }
         }
        stage('Deployment') {
