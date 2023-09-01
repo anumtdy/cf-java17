@@ -1,0 +1,11 @@
+applications:
+  - name: cf-java17
+    memory: 1024M
+    instances: 1
+    buildpack: sap_java_buildpack
+    path: target/cf_java17-0.0.1-SNAPSHOT.jar
+    env:
+      JBP_CONFIG_COMPONENTS: '{ "jres": ["com.sap.xs.java.buildpack.jdk.SAPMachineJDK"] }'
+      JBP_CONFIG_SAP_MACHINE_JDK: '{ "version": "17.+" }'
+      SPRING_PROFILES_ACTIVE: cloud
+   
