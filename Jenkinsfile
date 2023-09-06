@@ -2,7 +2,7 @@
 pipeline {
     agent any
      tools{
-        maven 'mavan_spring'
+        maven 'maven'
         }
     stages {
         stage('Hello') {
