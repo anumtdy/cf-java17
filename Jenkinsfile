@@ -2,6 +2,7 @@
 pipeline {
     agent any
      tools{
+         jdk 'sapjdk17'
         maven 'maven'
         }
     stages {
