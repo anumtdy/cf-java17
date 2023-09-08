@@ -1,11 +1,9 @@
 
 pipeline {
     agent any
-     environment {
-       DISABLE_AUTH = 'true'                              
-   }
+    
      tools{
-         jdk 'jdk17'
+         jdk 'jdk17.7'
         maven 'maven'
         }
     stages {
