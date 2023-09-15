@@ -3,8 +3,8 @@ pipeline {
     agent any
     
      tools{
-         jdk 'jdk17.7'
-        maven 'maven'
+         
+        maven 'mavan_spring'
         }
     stages {
         stage('Hello') {
