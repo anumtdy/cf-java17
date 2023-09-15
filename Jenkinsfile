@@ -3,7 +3,7 @@ pipeline {
     agent any
     
      tools{
-         jdk 'SAP17'
+         jdk 'jdk17.0.8'
         maven 'mavan_spring'
         }
     stages {
