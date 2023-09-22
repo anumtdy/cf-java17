@@ -1,4 +1,4 @@
-jenkins
+jenki
 Jenkins CI/CD
 Jenkins is a platform for creating Continuous Integration and Continuous delivery environment. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration, and continuous delivery. The system offers a wide range of freely available community plugins, Tools and native Jenkins workflows to orchestrate application development and deployment.
 This page describes the setup of Jenkins As A Service(JaaS) instance to run the service's CI/CD pipeline. A pipeline is a collection of steps/stages executed in the Continuous Integration and Continuous Delivery (CI/CD) process. 
