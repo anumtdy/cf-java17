@@ -3,7 +3,7 @@ pipeline {
     agent any
     
      tools{
-         jdk 'jdk'
+         jdk 'jdk_17'
         maven 'mavan_spring'
         }
     stages {
