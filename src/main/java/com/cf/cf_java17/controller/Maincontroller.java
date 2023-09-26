@@ -1,4 +1,4 @@
-inpackage com.cf.cf_java17.controller;
+package com.cf.cf_java17.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
