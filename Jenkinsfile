@@ -30,7 +30,7 @@ pipeline {
             steps {
                script{
                   cloudFoundryDeploy(
-                   script: script,
+                
                    cloudFoundry: [apiEndpoint: 'https://api.cf.ap21.hana.ondemand.com',credentialsId: 'cftrial', manifest: 'manifest.yml', org:'3cd7cd57trial', space: 'dev'],
                 
 
