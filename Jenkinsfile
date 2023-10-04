@@ -7,12 +7,7 @@ pipeline {
         maven 'maven'
         }
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello'
-               }
-            
-             }
+       
         stage('Init workspace and checkout the code') {
             steps {
                 script {
@@ -30,7 +25,7 @@ pipeline {
             steps {
                script{
                   cloudFoundryDeploy(
-                
+                   deployType: 'blue-green',
                    cloudFoundry: [apiEndpoint: 'https://api.cf.ap21.hana.ondemand.com',credentialsId: 'cftrial', manifest: 'manifest.yml', org:'3cd7cd57trial', space: 'dev'],
                 
                     deployTool: 'cf_native'
