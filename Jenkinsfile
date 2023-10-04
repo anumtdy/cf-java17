@@ -2,6 +2,7 @@
 pipeline {
     agent any
      tools{
+         jdk 'sapjdk17'
         maven 'maven'
         }
     stages {
@@ -11,6 +12,19 @@ pipeline {
                }
             
              }
+        stage('Init workspace and checkout the code') {
+            steps {
+                script {
+                    setupPipelineEnvironment script: this
+                    checkout scm
+                }
+            }
+        }
+         stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
 
 }
 }
