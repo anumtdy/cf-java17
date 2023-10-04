@@ -15,7 +15,7 @@ pipeline {
         stage('Init workspace and checkout the code') {
             steps {
                 script {
-                    setupPipelineEnvironment script: this
+                   
                     checkout scm
                 }
             }
