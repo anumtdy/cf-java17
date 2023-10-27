@@ -13,7 +13,7 @@ pipeline {
                 script {
                    
                     checkout scm
-                    setupPipelineEnvironment script: this
+                    
                 }
             }
         }
