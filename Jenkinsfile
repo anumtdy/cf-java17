@@ -13,12 +13,16 @@ pipeline {
                 script {
                    
                     checkout scm
+                    setupPipelineEnvironment script: this
                 }
             }
         }
          stage('Build') {
             steps {
-                sh 'mvn clean install'
+                script{
+                    buildExecute script:this, buildTool: 'maven'
+
+               
             }
         }
         stage('Deployment') {
