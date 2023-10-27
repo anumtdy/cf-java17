@@ -20,7 +20,7 @@ pipeline {
          stage('Build') {
             steps {
                 script{
-                    buildExecute script:this, buildTool: 'maven'
+                  // buildExecute script:this, buildTool: 'maven'
                 }
                
             }
