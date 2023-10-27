@@ -27,7 +27,7 @@ pipeline {
                   cloudFoundryDeploy(
                       script:this,
                    deployType: 'standard',
-                   cloudFoundry: [apiEndpoint: 'https://api.cf.ap10.hana.ondemand.com',appName:'cf-java17',credentialsId: '254a456a-8b27-44a3-bee7-5538e31718cc', manifest: 'manifest.yml', org:' EngSrvVal-E2E_AU', space: 'QPATools'],
+                   cloudFoundry: [apiEndpoint: 'https://api.cf.ap21.hana.ondemand.com',appName:'cf-java17',credentialsId: '4ce54de5-315c-4038-8824-6f9f8849efc0', manifest: 'manifest.yml', org: '3cd7cd57trial', space: 'dev'],
                 
                     deployTool: 'cf_native'
 
