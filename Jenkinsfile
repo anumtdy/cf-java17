@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script{
                     buildExecute script:this, buildTool: 'maven'
-
+                }
                
             }
         }
