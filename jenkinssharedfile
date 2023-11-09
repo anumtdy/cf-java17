@@ -1,1 +1,29 @@
+@Library(My-Jenkins-sharedLibrary) _
 
+pipeline {
+    agent any
+     tools{
+         jdk 'sapjdk17'
+        maven 'maven'
+        }
+    stages {
+       
+        stage('Init workspace and checkout the code') {
+            steps {
+                script {
+                   
+                    deploymentDemo()
+                    
+                }
+            }
+        }
+         stage('Build') {
+            steps {
+                
+                 mvn clean install
+                
+               
+            }
+        }
+}
+}
