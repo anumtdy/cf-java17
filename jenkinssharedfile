@@ -8,15 +8,7 @@ pipeline {
         }
     stages {
        
-        stage('Init workspace and checkout the code') {
-            steps {
-                script {
-                   
-                    deploymentDemo()
-                    
-                }
-            }
-        }
+        
          stage('Build') {
             steps {
                 script{
@@ -26,6 +18,15 @@ pipeline {
                 // bat 'mvn clean install'
                 
                
+            }
+        }
+stage('Deploymentstep') {
+            steps {
+                script {
+                   
+                    deploymentDemo()
+                    
+                }
             }
         }
 }
