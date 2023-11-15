@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Maincontroller {
 	@GetMapping(path = "")
 	   public ResponseEntity<String> getDroneMedications() {
-	      return new ResponseEntity<String>("Hello piper jenkins webhook!", HttpStatus.OK);
+	      return new ResponseEntity<String>("Hello piper  webhook!", HttpStatus.OK);
 	   }
 
 
