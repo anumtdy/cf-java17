@@ -12,8 +12,7 @@ pipeline {
             steps {
                 script {
                    
-                    checkout scm
-                    
+                    checkout scm  
                 }
             }
         }
