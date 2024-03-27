@@ -21,7 +21,7 @@ pipeline {
                 sh 'mvn clean install'  
             }
         }
-        stage('Deployment') {
+       /* stage('Deployment') {
             steps {
                script{
                   cloudFoundryDeploy(
@@ -34,7 +34,7 @@ pipeline {
    )         }
             
                }
-          }
+          }*/
 
 }
 }
